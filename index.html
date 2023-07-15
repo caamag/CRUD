@@ -1,0 +1,84 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="mobile/media.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <script src="js/index.js" defer></script>
+
+    <title>To-do list</title>
+</head>
+<body>
+
+    
+    <section class="container">
+
+        <h1>To-do list</h1>
+
+        <form action="" class="addTarefaForm">
+
+            <p>Adicionar tarefa:</p>
+            <div class="add-tarefa">
+
+                <input type="text" placeholder="O que deseja fazer?" id="add-tarefa">
+                <button type="submit">&#10010</button>
+
+            </div>
+
+        </form>
+
+        <form action="" class="form-edit">
+
+            <p>Editar tarefa:</p>
+            <input type="text" id="editar-tarefa" placeholder="Novo nome:">
+            <button type="submit">Add</button>
+
+            <button id="cancel">Cancelar</button>
+
+        </form>
+
+            <div class="pesquisa">
+
+                <div>
+                <p>Pesquisar</p>
+                <form>
+
+                    <input type="text" id="pesquisa" placeholder="Buscar:">
+
+                </form>
+
+                </div>
+
+                <div class="filtro">
+
+                    <select id="select-filtro">
+                        <option value="todos">Todos</option>
+                        <option value="a-fazer">A fazer</option>
+                        <option value="Feitos">Feitos</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="lista">
+
+                <p>Algo para fazer</p>
+                <button class="feito">&#10003</button>
+                <button class="editar">Editar</button>
+                <button class="excluir">Excluir</button>
+
+            </div>
+
+    </section>
+
+    
+</body>
+</html>
