@@ -144,38 +144,48 @@ border-radius: 5px;}
 
 
 
-.lista
+.tarefa
 {display: flex;
 width: 90%;
 margin: 0 auto;
-margin-top: 50px;
+margin-top: 20px;
 padding-bottom: 30px;
-margin-bottom: 10px;
 background-color: rgb(91, 152, 245);
-border-radius: 5px;}
+border-radius: 5px;
+transition: 500ms;}
 
-.lista p
-{font-size: 1.4rem;
+.tarefa-texto
+{font-size: 1.2rem;
 margin-right: 10px;
 margin-top: 25px;
 margin-left: 20px;
 margin-right: 60px;
-color: white;}
+color: white;
+transition: all ease-in-out 500ms;
+max-width: 250px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;}
 
-.lista button
+.tarefa button
 {padding-left: 15px;
 padding-right: 15px;
 padding-top: 5px;
 padding-bottom: 5px;
-margin-top: 33px;
+margin-top: 25px;
 font-size: 1rem;
 margin-left: 20px;
 border: none;
-cursor: pointer;}
+cursor: pointer;
+transition: 250ms;}
 
-.lista button:hover
-{scale: 1.05;
-background-color: rgb(226, 226, 226);}
+.tarefa button:hover
+{background-color: rgb(25, 117, 255);}
+
+
+.tarefa-feita 
+{text-decoration: line-through;
+background-color: rgb(66, 231, 179);}
 
 
 
