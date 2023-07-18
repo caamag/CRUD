@@ -2,12 +2,16 @@
 const addTarefaForm = document.querySelector('.addTarefaForm'); 
 const inputAddtarefa = document.querySelector('#add-tarefa');
 const listaGeral = document.querySelector('.lista'); 
-const pesquisa = document.querySelector('.pesquisa');
 const formEdit = document.querySelector('.form-edit'); 
 const editForm = document.querySelector('.form-edit'); 
 const editInput = document.querySelector('#editar-tarefa');
+const tarefaDiv = document.querySelector('.tarefa'); 
 
 let oldInputValue; 
+
+
+
+//função que cria uma tarefa:
 
 function addTarefa (tarefa) {
 
@@ -58,6 +62,10 @@ addTarefaForm.addEventListener('submit', (e) => {
 })
 
 
+
+
+
+//verifica botões de remover, editar e marcar tarefa como pronto:
 const tarefaTexto = document.querySelector('.tarefa-texto');  
 
 document.addEventListener('click', (e) => {
@@ -80,12 +88,11 @@ document.addEventListener('click', (e) => {
 
     if (elemento.classList.contains('editar')) {
         addTarefaForm.style.display = 'none'; 
-        pesquisa.style.display = 'none'; 
         listaGeral.style.display = 'none';
         formEdit.style.display = 'block'; 
 
         editInput.value = titleTarefa; 
-        oldInputValue.value = titleTarefa;
+        oldInputValue = titleTarefa;
 
     }
 
@@ -99,16 +106,36 @@ btnCancel.addEventListener('click', (e) => {
     e.preventDefault(); 
 
     addTarefaForm.style.display = 'block'; 
-    pesquisa.style.display = 'block'; 
-    pesquisa.style.display = 'flex'; 
     listaGeral.style.display = 'block';
     formEdit.style.display = 'none'; 
     
+}); 
 
-})
 
 
-function updateTarefa () {
+
+
+
+//edição das tarefas
+
+function updateTarefa (txt) {
+
+    const todasTarefas = document.querySelectorAll('.tarefa'); 
+
+    todasTarefas.forEach(function (tarefa) {
+
+        let tarefaTitulo = tarefa.querySelector('p'); 
+
+        if (tarefaTitulo.innerText === oldInputValue) {
+            tarefaTitulo.innerText = txt; 
+
+            addTarefaForm.style.display = 'block'; 
+            listaGeral.style.display = 'block';
+            formEdit.style.display = 'none'; 
+
+        }
+
+    })
 
 
 
@@ -122,9 +149,10 @@ editForm.addEventListener('submit', (e) => {
 
     const editInputValue = editInput.value; 
 
-    if (editInput) {
-
-    }  
-
+    if (!editInputValue) {
+        alert('Não pode haver uma tarefa vazia'); 
+    } else {
+        updateTarefa(editInput.value); 
+    }
 
 })

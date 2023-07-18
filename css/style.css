@@ -109,41 +109,6 @@ border-radius: 2px;}
 
 
 
-
-.pesquisa
-{margin-top: 50px;
-margin-left: 50px;
-display: flex;}
-
-.pesquisa p
-{font-size: 1.4rem;
-margin-right: 10px;}
-
-.pesquisa input
-{margin-top: 10px;
-font-size: 1.4rem;
-padding: 5px;
-border: none;  
-border-bottom: 2px solid black;}
-
-.filtro
-{position: relative;
-margin-left: 30px;}
-
-.filtro select
-{position: absolute;
-bottom: 0px;
-left: 0px;
-font-size: 1.4rem;
-padding-left: 10px;
-padding-right: 10px;
-padding-top: 5px;
-padding-bottom: 5px;
-border-radius: 5px;}
-
-
-
-
 .tarefa
 {display: flex;
 width: 90%;
