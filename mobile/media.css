@@ -1,0 +1,64 @@
+
+@media screen and (max-width: 500px) {
+    
+body
+{background-color: white;}
+
+.container
+{width: 100%;
+border-radius: 0px;
+margin-top: 0px;}
+
+.tituloPrincipal
+{font-size: 1.6rem;
+padding-top: 20px;}
+
+.addTarefaForm
+{margin-left: 10px;}
+
+.addTarefaForm p
+{font-size: 1.2rem;}
+
+.addTarefaForm input
+{font-size: 1.2rem;}
+
+
+
+
+.form-edit 
+{margin-left: 10px;}
+
+.form-edit p
+{font-size: 1.2rem;}
+
+.form-edit input
+{font-size: 1.2rem;
+width: 90%;}
+
+.form-edit button
+{margin-top: 20px;
+margin-left: 0px;}
+
+
+
+.tarefa
+{width: 98%;
+border-radius: 3px;}
+
+.tarefa-texto
+{font-size: 1rem;
+max-width: 220px;}
+
+.position-button
+{position: absolute;
+right: 10px;}
+
+.tarefa button
+{padding-left: 8px;
+padding-right: 8px;
+padding-top: 3px;
+padding-bottom: 3px;
+font-size: 0.8rem;
+margin-left: 5px;}
+
+}

@@ -111,6 +111,7 @@ border-radius: 2px;}
 
 .tarefa
 {display: flex;
+position: relative;
 width: 90%;
 margin: 0 auto;
 margin-top: 20px;
@@ -131,6 +132,10 @@ max-width: 250px;
 white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;}
+
+.position-button
+{position: absolute;
+right: 10px;}
 
 .tarefa button
 {padding-left: 15px;
